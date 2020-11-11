@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
 import testReducer from './testReducer'
+import logoutReducer from './logoutReducer'
 
 const allReducers = combineReducers({
-    testRedux: testReducer
+    testRedux: testReducer,
+    logout: logoutReducer
 })
 
 export default allReducers

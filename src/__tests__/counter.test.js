@@ -54,7 +54,7 @@ describe('Test Counter', () => {
         expect(parseInt(value.innerHTML)).toBe(num + 1)
     })
 
-    it("shoulddecrement", () => {
+    it("should decrement", () => {
         const { getByLabelText } = AppComponent();
         const decrementButton = getByLabelText("decr")
         const value = getByLabelText("value")
