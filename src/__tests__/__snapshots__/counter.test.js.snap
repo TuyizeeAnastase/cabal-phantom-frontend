@@ -6,16 +6,16 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="header"
+        class="headers"
       >
         <h1
-          class="header__title"
+          class="headers__title"
         >
           Phantom App
         </h1>
         <div
           aria-label="value"
-          class="header__title"
+          class="headers__title"
         >
           0
         </div>
@@ -54,16 +54,16 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="header"
+      class="headers"
     >
       <h1
-        class="header__title"
+        class="headers__title"
       >
         Phantom App
       </h1>
       <div
         aria-label="value"
-        class="header__title"
+        class="headers__title"
       >
         0
       </div>

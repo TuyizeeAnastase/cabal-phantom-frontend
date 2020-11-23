@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const hostname = ip.address() || 'localhost';
 
 module.exports = {
-   mode: 'development',
+  mode: 'development',
   entry: './src/index',
   output: {
     path: path.join(__dirname,'build'),
@@ -17,7 +17,7 @@ module.exports = {
     publicPath: '/',
     host: `${hostname}`,
     port: 5001,
-    //hot: true,
+    hot: true,
     //watchContentBase: true,
     inline: true,
     contentBase: './',

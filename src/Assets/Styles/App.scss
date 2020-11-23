@@ -1,14 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans";
-}
-
-html {
-    font-size: 10px;
-}
-
-.header{
+.headers{
     background-color: rgb(89, 203, 223);
     height: 100vh;
     display: flex;
@@ -17,7 +7,7 @@ html {
     justify-content: center;
 }
 
-.header__title {
+.headers__title {
     font-size: 5rem;
     text-align: center;
     display: flex;
