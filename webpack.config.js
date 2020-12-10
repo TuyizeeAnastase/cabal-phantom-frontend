@@ -8,7 +8,8 @@ module.exports = {
    mode: 'development',
   entry: './src/index',
   output: {
-    path: path.join(__dirname,'build'),
+    path: path.join
+      (__dirname, 'build'),
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -17,8 +18,8 @@ module.exports = {
     publicPath: '/',
     host: `${hostname}`,
     port: 5001,
-    //hot: true,
-    //watchContentBase: true,
+    // hot: true,
+    // watchContentBase: true,
     inline: true,
     contentBase: './',
     watchOptions: {
@@ -26,7 +27,9 @@ module.exports = {
     },
     compress: true,
     open: true,
-    historyApiFallback: true
+    historyApiFallback: {
+      disableDotRule: true
+    }
   },
   module : {
     rules: [
@@ -40,6 +43,11 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ["style-loader", "css-loader","sass-loader"]
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+        exclude: /\.module\.css$/
       },
       {
 				test: /\.(png|jpe?g|gif)$/i,

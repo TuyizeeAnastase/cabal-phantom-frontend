@@ -8,7 +8,7 @@
     "start": "npm run build & serve -s ./build",
     "test": "jest -c",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test:watch": "jest --watch --coverage",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
@@ -34,9 +34,14 @@
     "@babel/runtime": "^7.12.5",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-bootstrap-icons": "^1.1.0",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
+    "reactstrap": "^8.7.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
